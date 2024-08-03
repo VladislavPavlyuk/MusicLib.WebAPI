@@ -1,12 +1,12 @@
-using MusLib.WebAPI.Models;
+using MusicLib.WebAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Получаем строку подключения из файла конфигурации
+// РџРѕР»СѓС‡Р°РµРј СЃС‚СЂРѕРєСѓ РїРѕРґРєР»СЋС‡РµРЅРёСЏ РёР· С„Р°Р№Р»Р° РєРѕРЅС„РёРіСѓСЂР°С†РёРё
 string? connection = builder.Configuration.GetConnectionString("DefaultConnection");
 
-// добавляем контекст ApplicationContext в качестве сервиса в приложение
+// РґРѕР±Р°РІР»СЏРµРј РєРѕРЅС‚РµРєСЃС‚ ApplicationContext РІ РєР°С‡РµСЃС‚РІРµ СЃРµСЂРІРёСЃР° РІ РїСЂРёР»РѕР¶РµРЅРёРµ
 builder.Services.AddDbContext<UserContext>(options => options.UseSqlServer(connection));
 builder.Services.AddControllers();
 

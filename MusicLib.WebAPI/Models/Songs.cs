@@ -1,6 +1,4 @@
-using Microsoft.EntityFrameworkCore;
-
-namespace MusLib.WebAPI.Models
+namespace MusicLib.WebAPI.Models
 {
     public class Song
     {
@@ -10,5 +8,6 @@ namespace MusLib.WebAPI.Models
 
         public Genre? Genre { get; set; }
         public int? GenreId { get; set; }
+
     }
 }

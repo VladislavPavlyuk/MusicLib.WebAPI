@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MusLib.WebAPI.Models;
+using MusicLib.WebAPI.Models;
 
-namespace MusLib.WebAPI.Controllers
+namespace MusicLib.WebAPI.Controllers
 {
     [ApiController]
     [Route("api/Users")]

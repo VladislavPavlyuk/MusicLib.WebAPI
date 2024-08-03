@@ -1,6 +1,4 @@
-using Microsoft.EntityFrameworkCore;
-
-namespace MusLib.WebAPI.Models
+namespace MusicLib.WebAPI.Models
 {  
     public class Genre
     {
